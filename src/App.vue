@@ -6,15 +6,18 @@
 
   <!--{{message}} refers to the message we defined in data-->
   <h1>number: {{ number }}</h1>
+  <hr />
 
   <h1>doubleNum(50): {{ doubleNum(50) }}</h1>
+  <hr />
 
   <h1>number * 2 = {{ number * 2 }}</h1>
+  <hr />
 
   <h1>
     {{ number > 150 ? 'number is great than 150' : 'number is less than 150' }}
   </h1>
-
+  <hr />
   <h1 v-text="number"></h1>
 
   <hr />
@@ -22,6 +25,7 @@
   <h1>harry: {{ harry }}</h1>
 
   <h1>harry.name: {{ harry.name }}</h1>
+  <hr />
 
   <h1>hogwartsWizards: {{ hogwartsWizards }}</h1>
 
