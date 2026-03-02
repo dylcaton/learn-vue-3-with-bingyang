@@ -18,9 +18,9 @@
   ></div>
 
 
-<!--   <div id="mouseover" @mouseover="fun1">
+  <div id="mouseover" @mouseover="fun1">
     <textarea @mouseover.stop="fun2($event)">This is a text area.</textarea>
-  </div> -->
+  </div>
 
   <div>
     Press down the "Enter" key will trigger a console log print:
