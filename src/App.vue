@@ -1,7 +1,7 @@
 <template>
   <h1>{{ message }}</h1>
   <h1>Welcome, {{ formData.name }}</h1>
-  <form action="">
+  <form action=" ">
     <div>
       <span>Name:</span>
       <span>
@@ -44,15 +44,13 @@
     </div>
     <div>
       <span>Description:</span>
-      <!-- Leading and trailing whitespace is removed automatically. -->
       <textarea
         v-model.trim="formData.desc"
-        @keyup.enter="submitForm"
+        @keydown.enter="submitForm"
       ></textarea>
     </div>
     <div>
       <input type="reset" value="Reset" @click="resetForm" />
-      <!-- Prevent the form from submitting through form action. -->
       <input type="submit" value="Submit" @click.prevent="submitForm" />
     </div>
   </form>
@@ -85,7 +83,6 @@ function resetForm() {
 
 function submitForm() {
   console.log(JSON.stringify(formData.value))
-  // We can use axios or fetch() to submit data to the back end.
 }
 </script>
 
