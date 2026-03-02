@@ -129,7 +129,7 @@
 import { ref } from 'vue'
 
 let username = 'Harry';
-let shoppingCartItems = [
+let shoppingCartItems = ref([
   {
     id: 1,
     productName: 'Dragon Liver',
@@ -170,7 +170,7 @@ let shoppingCartItems = [
     quantity: 1,
     image: 'src/assets/img/Nimbus2000.jpg'
   },
-]
+])
 
 let hideDetails = ref(false)
 
