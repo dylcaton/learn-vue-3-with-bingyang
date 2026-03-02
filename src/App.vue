@@ -5,7 +5,6 @@
     <div>
       <span>Name:</span>
       <span>
-        <!-- formData.name is synced after "change" event instead of "input" event. -->
         <input type="text" v-model.lazy="formData.name" />
       </span>
     </div>
@@ -21,13 +20,11 @@
     <div>
       <span>Age:</span>
       <span>
-        <!-- Input is automatically typecast as a number. -->
         <input type="text" id="age" v-model.number="formData.age" />
       </span>
     </div>
     <div>
       <span>Hobbies:</span>
-      <!-- We can bind multiple checkboxes to the same array. -->
       <input type="checkbox" value="basketball" v-model="formData.hobbies" />
       <label for="basketball">Basketball</label>
       <input type="checkbox" value="football" v-model="formData.hobbies" />
